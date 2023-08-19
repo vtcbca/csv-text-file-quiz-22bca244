@@ -1,0 +1,23 @@
+import csv
+
+rows='''1. My name is kinjal.
+2. I study in sybca from vtcbcsr collage.
+3. I am 19 years old.
+4. My hobby is playing tabletanis
+5. I living in surat city.'''
+
+*writer 
+---------
+with open('intro.txt','w',newline='') as c: 
+    o=csv.writer(c) 
+    o.writerow(rows) 
+    print(row)
+
+*reader
+---------
+from csv import reader
+with open('intro.txt','r',newline='',encoding="utf8") as d:
+    reading=reader(d) 
+    for i in d:
+             print(i)
+             
